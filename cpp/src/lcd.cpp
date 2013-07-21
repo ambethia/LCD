@@ -52,7 +52,8 @@ void LCD::draw() const
       for (int i = 0; i < segments; ++i)
       {
         std::vector<int>::const_iterator it = numbers.begin();
-        for(; it != numbers.end(); ++it) {
+        for(; it != numbers.end(); ++it)
+        {
           for (int column = 0; column < 2; ++column)
           {
             const char symbol = test(*it, row + column + offset) ? V_SYM : S_SYM;
