@@ -4,7 +4,6 @@ c/lcd.o
 c/lcd.dSYM
 c sharp/LCD/bin
 c sharp/LCD/obj
-dart/lcd/bin
 dart/lcd/packages
 haxe/bin
 rust/bin
