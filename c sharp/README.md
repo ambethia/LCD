@@ -10,4 +10,4 @@ Open the solution in MonoDevelop (now Xamarin Studio) or build on the command li
 
 Run it:
 
-  mono ./LCD/bin/Release/LCD.exe -s 7 42
+    mono ./LCD/bin/Release/LCD.exe -s 7 42
