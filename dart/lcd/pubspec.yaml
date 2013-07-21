@@ -1,0 +1,8 @@
+name: lcd
+author: Jason L Perry
+description: July 2013 Coder Night
+dependencies:
+  args: any
+
+#dependencies:
+#  unittest: any
