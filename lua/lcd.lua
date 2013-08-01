@@ -1,7 +1,7 @@
 LCD = {}
 LCD.__index = LCD;
 
-local TABLE = { 119, 36, 93, 109, 46, 107, 123, 37, 127, 111 }
+local TABLE = { 119, 36, 93, 109, 46, 107, 123, 37, 127, 111 } -- Binary notation is not available in Lua.
 local H_SYM = "-"
 local V_SYM = "|"
 local S_SYM = " "
@@ -19,7 +19,7 @@ function LCD.create(input, segments)
 end
 
 function LCD:test(number, position)
-  return bit32.band(TABLE[number + 1], 2 ^ position) > 0
+  return bit32.band(TABLE[number + 1], (bit32.lshift(1, position))) > 0
 end
 
 function LCD:draw()
