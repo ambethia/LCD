@@ -1,5 +1,5 @@
 class LCD {
-  private static var TABLE = [119, 36, 93, 109, 46, 107, 123, 37, 127, 111];
+  private static var TABLE = [119, 36, 93, 109, 46, 107, 123, 37, 127, 111]; // Binary notation is not available in Haxe.
   private static var H_SYM = "-";
   private static var V_SYM = "|";
   private static var S_SYM = " ";
@@ -20,7 +20,7 @@ class LCD {
 
   function test(number : Int, position : Int) : Bool
   {
-    return (TABLE[number] & Std.int(Math.pow(2, position))) > 0;
+    return (TABLE[number] & (1 << position)) > 0;
   }
 
   function draw()
