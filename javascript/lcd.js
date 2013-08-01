@@ -1,4 +1,4 @@
-var TABLE = [119, 36, 93, 109, 46, 107, 123, 37, 127, 111];
+var TABLE = [119, 36, 93, 109, 46, 107, 123, 37, 127, 111]; // Binary notation is not supported in Js.
 var H_SYM = "-";
 var V_SYM = "|";
 var S_SYM = " ";
@@ -13,7 +13,7 @@ var LCD = function(input, segments) {
 }
 
 LCD.prototype.test = function(number, position) {
-  return (TABLE[number] & Math.pow(2, position)) > 0;
+  return (TABLE[number] & (1 << position)) > 0;
 };
 
 LCD.prototype.draw = function() {
