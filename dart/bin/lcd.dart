@@ -3,7 +3,7 @@ import 'dart:io';
 import 'dart:math';
 
 class LCD {
-  static const List<int> TABLE = const [119, 36, 93, 109, 46, 107, 123, 37, 127, 111];
+  static const List<int> TABLE = const [119, 36, 93, 109, 46, 107, 123, 37, 127, 111]; // Binary notation is not available in Dart.
   static const String H_SYM = "-";
   static const String V_SYM = "|";
   static const String S_SYM = " ";
@@ -20,7 +20,7 @@ class LCD {
   }
 
   bool test(int number, int position) {
-    return (TABLE[number] & pow(2, position)) > 0;
+    return (TABLE[number] & (1 << position)) > 0;
   }
 
   void draw() {
