@@ -6,7 +6,18 @@
 
 #define MAX_INPUT_LENGTH 32
 
-const int TABLE[] = { 119, 36, 93, 109, 46, 107, 123, 37, 127, 111 };
+const int TABLE[] = {
+  0b1110111,
+  0b0100100,
+  0b1011101,
+  0b1101101,
+  0b0101110,
+  0b1101011,
+  0b1111011,
+  0b0100101,
+  0b1111111,
+  0b1101111
+};
 const char H_SYM = '-';
 const char V_SYM = '|';
 const char S_SYM = ' ';
@@ -34,7 +45,7 @@ bool lcd_test(int number, int position)
 {
   if (number < 10)
   {
-    return (TABLE[number] & (int)(pow(2.0, position))) > 0;
+    return (TABLE[number] & (0b0000001 << position)) > 0;
   } else {
     return false;
   }
