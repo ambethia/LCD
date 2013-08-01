@@ -2,7 +2,18 @@ require "lcd/version"
 require 'optparse'
 
 class LCD
-  TABLE = [119, 36, 93, 109, 46, 107, 123, 37, 127, 111]
+  TABLE = [
+    0b1110111,
+    0b0100100,
+    0b1011101,
+    0b1101101,
+    0b0101110,
+    0b1101011,
+    0b1111011,
+    0b0100101,
+    0b1111111,
+    0b1101111
+  ]
   H_SYM = "-"
   V_SYM = "|"
   S_SYM = " "
@@ -15,7 +26,7 @@ class LCD
   end
 
   def test(number, position)
-    (TABLE[number] & 2**position) > 0
+    (TABLE[number] & (0b0000001 << position)) > 0
   end
 
   def draw
