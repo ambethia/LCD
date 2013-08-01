@@ -2,7 +2,18 @@
 
 using namespace std;
 
-int LCD::TABLE[] = { 119, 36, 93, 109, 46, 107, 123, 37, 127, 111 };
+int LCD::TABLE[] = {
+  0b1110111,
+  0b0100100,
+  0b1011101,
+  0b1101101,
+  0b0101110,
+  0b1101011,
+  0b1111011,
+  0b0100101,
+  0b1111111,
+  0b1101111
+};
 char LCD::H_SYM = '-';
 char LCD::V_SYM = '|';
 char LCD::S_SYM = ' ';
@@ -24,7 +35,7 @@ LCD::~LCD()
 
 bool LCD::test(int number, int position) const
 {
-  return (TABLE[number] & (int)pow(2.0, (double)position)) > 0;
+  return (TABLE[number] & (0b0000001 << position)) > 0;
 }
 
 void LCD::draw() const
