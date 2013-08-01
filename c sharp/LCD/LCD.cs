@@ -4,7 +4,7 @@ using System.Linq;
 
 class LCD
 {
-	private static int[] TABLE = { 119, 36, 93, 109, 46, 107, 123, 37, 127, 111 };
+	private static int[] TABLE = { 119, 36, 93, 109, 46, 107, 123, 37, 127, 111 }; // Binary notation is not available in C#
 	private static string H_SYM = "-";
 	private static string V_SYM = "|";
 	private static string S_SYM = " ";
@@ -23,7 +23,7 @@ class LCD
 
 	bool test (int number, int position)
 	{
-		return (TABLE[number] & Convert.ToInt32(Math.Pow(2, position))) > 0;
+		return (TABLE[number] & (1 << position)) > 0;
 	}
 
 	void draw ()
