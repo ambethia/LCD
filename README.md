@@ -18,7 +18,7 @@ I try to be as idiomatic in each language as possible while staying true to the 
 
 These are some of the questions I found myself asking repeatedly when in unfamilliar territory:
 
-* How are the project files ogranized, are there a best-practices to follow? 
+* How are the project files ogranized, are there best-practices to follow? 
 * How do I run builds? A GUI, a Makefile (e.g. c, rust), run a VM on the command line (e.g. lua, ruby)?
 * How do I print to standard out? "Hello, World?"
 * What's the entry point? Is there a `main` function I can implement?
