@@ -1,5 +1,5 @@
 require "lcd/version"
-require 'optparse'
+require "optparse"
 
 class LCD
   TABLE = [
