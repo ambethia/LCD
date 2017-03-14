@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "scripts": {
+    "watch": "echo lcd.js | entr node lcd.js -s 7 42"
+  },
+  "devDependencies": {
+    "eslint": "^3.17.1",
+    "eslint-config-standard": "^7.0.1",
+    "eslint-config-standard-react": "^4.3.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^6.10.0",
+    "eslint-plugin-standard": "^2.1.1"
+  }
+}
