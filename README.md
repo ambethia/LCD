@@ -1,6 +1,6 @@
 # LCD
 
-These are polyglot implementations of the [July 2013 Coder Night problem](https://gist.github.com/ambethia/5960316). A "rosetta stone" of sorts, nearly identical implementations in each target language.
+These are polyglot implementations of the [July 2013](https://gist.github.com/ambethia/5960316) and March 2017 Coder Night problem.  A "rosetta stone" of sorts, nearly identical implementations in each target language.
 
 I try to be as idiomatic in each language as possible while staying true to the implementation (to help in making side-by-side comparisions). I'm far from an expert in a lot of these languages, so any feedback on specific techniques is appreciated.
 
