@@ -8,7 +8,8 @@ I try to be as idiomatic in each language as possible while staying true to the 
 * haxe √
 * rust √
 * lua √
-* javascript √
+* javascript (ES5) √
+* javascript (ES2015) √
 * c# √
 * dart √
 * c √
